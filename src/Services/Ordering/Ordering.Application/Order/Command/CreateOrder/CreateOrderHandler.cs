@@ -1,9 +1,4 @@
-﻿using BuildingBlocks.CQRS;
-using Ordering.Application.Data;
-using Ordering.Application.Dtos;
-using Ordering.Domain.ValueObjects;
-
-namespace Ordering.Application.Order.Command.CreateOrder;
+﻿namespace Ordering.Application.Order.Command.CreateOrder;
 
 public class CreateOrderHandler(IApplicationDbContext dbContext)
     :ICommandHandler<CreateOrderCommand,CreateOrderResult>

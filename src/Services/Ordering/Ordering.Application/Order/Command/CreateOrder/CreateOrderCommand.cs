@@ -5,7 +5,7 @@ using System.Windows.Input;
 
 namespace Ordering.Application.Order.Command.CreateOrder;
 
-public record CreateOrderResult(Guid id);
+public record CreateOrderResult(Guid Id);
 public record CreateOrderCommand(OrderDto Order)
     : ICommand<CreateOrderResult>;
 
