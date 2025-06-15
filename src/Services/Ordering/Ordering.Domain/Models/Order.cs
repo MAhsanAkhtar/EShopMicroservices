@@ -26,14 +26,14 @@ public class Order: Aggregate<OrderId>
     }
 
     // Static Create Method
-    public static Order Create(OrderId id, CustomerId customerId,OrderName ordername,Address shippingAddress,Address billingAddress, Payment payment)
+    public static Order Create(OrderId id, CustomerId customerId,OrderName orderName,Address shippingAddress,Address billingAddress, Payment payment)
     {
         //default constructor calling
         var order = new Order()
         {
             Id = id,
             CustomerId = customerId,
-            OrderName = ordername,
+            OrderName = orderName,
             ShippingAddress = shippingAddress,
             BillingAddress = billingAddress,
             Payment = payment,
