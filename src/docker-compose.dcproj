@@ -7,7 +7,7 @@
     <ProjectGuid>17d5ab5a-6b01-4c33-ab95-bfbce8d4c17a</ProjectGuid>
     <DockerLaunchAction>None</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}</DockerServiceUrl>
-    <DockerServiceName>catalogapi</DockerServiceName>
+    <DockerServiceName>ordering.api</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">

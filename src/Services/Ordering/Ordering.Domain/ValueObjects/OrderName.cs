@@ -11,7 +11,7 @@ public record OrderName
     {
         // Domain Validation 
         ArgumentException.ThrowIfNullOrWhiteSpace(value);
-        ArgumentOutOfRangeException.ThrowIfNotEqual(value.Length, DefaultLength);
+        //ArgumentOutOfRangeException.ThrowIfNotEqual(value.Length, DefaultLength);
         // Returning object
         return new OrderName(value);
     }
